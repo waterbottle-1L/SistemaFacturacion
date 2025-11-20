@@ -1,7 +1,7 @@
 package com.SistemaFacturacion.controller;
 
-import com.SistemaFacturacion.entitites.Clientes;
-import com.SistemaFacturacion.repositories.ClienteRepository;
+import com.SistemaFacturacion.entitites.User;
+import com.SistemaFacturacion.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.*;
 public class ClientesController {
 
     @Autowired
-    private ClienteRepository clienteRepository;
+    private UserRepository clienteRepository;
 
     @PostMapping
-    public Clientes registrarCLientes(@RequestBody Clientes cliente) {
+    public User registrarCLientes(@RequestBody User cliente) {
         return clienteRepository.save(cliente);
     }
 }

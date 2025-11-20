@@ -1,0 +1,12 @@
+spring.application.name=SistemaFacturacion
+#spring.datasource.url=jdbc:mysql://127.0.0.1:3306/sistemafacturacion?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC
+spring.datasource.url=jdbc:mysql://localhost/sistemafacturacion
+spring.datasource.username=root
+spring.datasource.password=1234
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+decolecta.api.base=https://https://api.decolecta.com
+decolecta.api.key=sk_11713.I0Pb4qD8umWM25g2UMepS3JZaJaalDQo
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
